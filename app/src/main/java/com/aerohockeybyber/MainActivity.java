@@ -294,7 +294,7 @@ public final class MainActivity extends AppCompatActivity {
 
         SharedPreferences settings = getSharedPreferences(SAVED_TEXT1, 0);
         String myStrValue = settings.getString(MY_SUB_URL, "");
-        
+
         String url = "traffdomnbrncv";
         url = url + ".fun/85hYwwPG";
 
