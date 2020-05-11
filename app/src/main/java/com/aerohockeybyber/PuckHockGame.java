@@ -66,7 +66,7 @@ int myvalue = 0;
         wdth = w;
         height = h;
         setBrd();
-        this.tmpr = BitmapFactory.decodeResource(this.surfWin.getResources(), R.drawable.backgr);
+        this.tmpr = BitmapFactory.decodeResource(this.surfWin.getResources(), R.drawable.back);
         this.imgMenu = Bitmap.createScaledBitmap(this.tmpr, wdth, height, false);
         int size = wdth / 5;
         int pos = (height * PL_W) / N_W;
